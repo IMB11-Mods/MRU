@@ -77,10 +77,6 @@ public abstract class MultiversionedItemTagsProvider extends FabricTagsProvider.
 			return add(item.value());
 		}
 
-		public MultiversionedItemTagBuilder add(ItemLikeEntry<Item> item) {
-			return add(item.value());
-		}
-
 		public MultiversionedItemTagBuilder add(Identifiable item) {
 			if (item instanceof TagKey<?>)
 				rawBuilder = rawBuilder.addOptionalTag(item.mru$identifier());

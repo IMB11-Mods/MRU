@@ -76,10 +76,6 @@ public abstract class MultiversionedBlockTagsProvider extends FabricTagsProvider
 			return this;
 		}
 
-		public MultiversionedBlockTagBuilder add(ItemLikeEntry<Item> item) {
-			return add(item.value());
-		}
-
 		public MultiversionedBlockTagBuilder add(Holder<Block> block) {
 			add(block.value());
 			return this;

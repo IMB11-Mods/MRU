@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 /**
  * A pair of a block or item and its ID. Primary benefit over a direct value is for 26.2+ data generation, which requires the ID to be stored separately from the block.
  */
-public record ItemLikeEntry<T extends ItemLike>(Identifier mru$id, T value) implements ItemLike, Identifiable, Supplier<T> {
+public record ItemLikeEntry<T extends ItemLike>(Identifier mru$id, T value) implements ItemLike, Identifiable {
 
 	@Override
 	public Item asItem() {
