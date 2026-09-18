@@ -4,14 +4,13 @@ import cc.cassian.mru.util.Identifiable;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.tags.TagKey;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 
 import java.util.Optional;
 
-@Mixin(Holder.Reference.class)
-public abstract class HolderMixin implements Identifiable {
+@Mixin(Holder.Direct.class)
+public abstract class HolderDirectMixin implements Identifiable {
 
 	@Shadow
 	public abstract Optional<ResourceKey<?>> unwrapKey();

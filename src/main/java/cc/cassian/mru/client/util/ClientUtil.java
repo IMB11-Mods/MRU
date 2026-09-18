@@ -25,10 +25,10 @@ public class ClientUtil {
 	public static float getOverworldTime() {
 		var level = Minecraft.getInstance().level;
 		//? if >26.2 {
-		/*return level.clockManager().getInstance(level.registryAccess().getOrThrow(WorldClocks.OVERWORLD)).totalTicks();
-		 *///?} else if >26 {
-		return level.clockManager().getTotalTicks(level.registryAccess().getOrThrow(WorldClocks.OVERWORLD));
-		//?} else
+		return level.clockManager().getInstance(level.registryAccess().getOrThrow(WorldClocks.OVERWORLD)).totalTicks();
+		 //?} else if >26 {
+		/*return level.clockManager().getTotalTicks(level.registryAccess().getOrThrow(WorldClocks.OVERWORLD));
+		*///?} else
 		//return level.getDayTime();
 	}
 }

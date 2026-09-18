@@ -1,10 +1,11 @@
 {
   "required": true,
   "package": "cc.cassian.mru.mixin",
-  "compatibilityLevel": "JAVA_21",
+  "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8",
   "mixins": [
     "BlockMixin",
+    "HolderDirectMixin",
     "HolderMixin",
     "ItemMixin",
     "ResourceKeyMixin",
