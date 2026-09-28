@@ -24,10 +24,12 @@ public class VersionedUtil {
 		*///?}
 	}
 
+	//? fabric || <26.3 {
 	public static void registerStrippable(Block input, Block output) {
 		//~ if >26.2 'registry.StrippableBlockRegistry.register'->'item.v1.BlockTransformerHelper.registerStripping'
 		net.fabricmc.fabric.api.item.v1.BlockTransformerHelper.registerStripping(input, output);
 	}
+	//?}
 
 	public static void registerWaxable(Block input, Block output) {
 		//~ if >26 'registerWaxableBlockPair('->'registerWaxable('

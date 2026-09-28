@@ -1,3 +1,9 @@
+# Changelog
+
+## [1.0.40]
+
+- Downgraded Java requirement to 17 to account for 1.20.1 still recieving builds.
+
 ## 1.0.39
 
 ### Added

@@ -162,7 +162,10 @@ neoForge {
         // Disable recompilation for performance reasons
         isDisableRecompilation = true
     }
-    interfaceInjectionData.from(rootProject.file("src/main/resources/interfaces.json"))
+    interfaceInjectionData {
+        from(rootProject.file("src/main/resources/interfaces.json"))
+        publish(rootProject.file("src/main/resources/interfaces.json"))
+    }
     validateAccessTransformers = true
 
     if (hasProperty("deps.parchment")) parchment {

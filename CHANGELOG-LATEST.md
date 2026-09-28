@@ -1,1 +1,5 @@
-- Downgraded Java requirement to 17 to account for 1.20.1 still recieving builds.
+### Added
+- NeoForge 26.3 support.
+
+### Fixed
+- Interface injection data is now published on NeoForge and OldForge.

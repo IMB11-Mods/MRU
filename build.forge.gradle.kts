@@ -166,6 +166,10 @@ repositories {
 legacyForge {
     version = property("deps.forge") as String
     validateAccessTransformers = true
+    interfaceInjectionData {
+        from(rootProject.file("src/main/resources/interfaces.json"))
+        publish(rootProject.file("src/main/resources/interfaces.json"))
+    }
 
     if (hasProperty("deps.parchment")) parchment {
         val (mc, ver) = (property("deps.parchment") as String).split(':')
